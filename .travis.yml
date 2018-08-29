@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: mzuGtcgplscGOSFQfJbM+L+Y8EGM5qYQWgQTEwy4iSTdIq+9Q5Z0oTYJ7DKkG/jy2W2Z2rupdYzziUGp0sAlTuQRWZig1P6lR4yHufWtT6C8AnKgXVNRlGSIrmzt6FdQYf1+N655lK43RmySIjFSRF70pX/6GpStLQ8vE/PbshPk0Z+wF0/6i2LENi1MY7w3gtWpQ2MgXWghQMRcex1/5ALGkdh1Z66LoD+kaRI2cEYMRJKBWEmWhTiN6ijWVvqGMQ4/LagBbMmAJnuEzwWrHL++LSJEEtjBk7XRDWv7iWjQkDAt61RGsPr2juQc9MA32b1S/A2MDhTe5MRkNxIfnFhYuMaqw1VC7xlb+BIlPPULysGbcTt6KyJxme2De9AFk5T7hXR5BRmgI/JdeG7xusdoMmVnvzBOmYH9jlmmnhbkLz43DLpdUkQP8T5f9/g46tb8i1QxY2fTEW1P/nsR0HK4kiEJo0XSry+RE0TgJkNAhQwtg4gC7Kf76SmrRrrRjmrpAdM4VV79dL1LOfhg1Q/u6e0ayBlYQK/dzY6Kts4sUmn0K/5lvMbZd1k13hC3Socpr5hFPxnXCUSLSaYhaDEiFJL4rLlPrj69smPryiknaKjn3jXT0+jHJZtdT9Sr+piTSEu1RDZV0O2C1R+iK2yH7MHP4Hte1nqqVJimTQs=
+  app: sheltered-tundra-15621
+  on:
+    repo: eswoodard/react-trello-testing
